@@ -1,0 +1,417 @@
+/rcfs/dtn/arpacomp/.conda/envs/goc_eval/lib/python3.10/site-packages/scipy/sparse/linalg/_dsolve/linsolve.py:347: SparseEfficiencyWarning: splu converted its input to CSC format
+  warn('splu converted its input to CSC format', SparseEfficiencyWarning)
+args:
+Namespace(problem_opt=None, problem='/qfs/projects/goc/share/data/C3/E1/D1/C3E1N01576D1/scenario_121.json', solution='/qfs/projects/goc/share/data/C3/E1/D1/C3E1N01576D1/scenario_121.json.pop_solution.json', configuration=None, parameters='{}', summary_csv='summary.csv', summary_json='summary.json', data_errors='data_errors.txt', ignored_errors='ignored_errors.txt', solution_errors='solution_errors.txt', pop_solution=None, scrubbed_problem=None)
+problem data file: /qfs/projects/goc/share/data/C3/E1/D1/C3E1N01576D1/scenario_121.json
+
+pop solution data file: None
+
+solution data file: /qfs/projects/goc/share/data/C3/E1/D1/C3E1N01576D1/scenario_121.json.pop_solution.json
+
+git info: {'C3DataUtilities': {'branch': None, 'commit': '417faef61bd7caf40b3ea0dc36c5e033ca7ea3d5', 'date': 'Fri Dec 30 07:03:34 2022 -0800', 'query_return_code': 0, 'query_err': '', 'query_path': '/qfs/projects/goc/share/loadbalancing/src/nonmpi-template/Challenge3/C3DataUtilities/datautilities', 'query_out': 'commit 417faef61bd7caf40b3ea0dc36c5e033ca7ea3d5\nAuthor: Jesse T Holzer <jesse.holzer@pnnl.gov>\nDate:   Fri Dec 30 07:03:34 2022 -0800\n\n    add z_value, z_cost, z_penalty components of z_base\n'}, 'Bid-DS-data-model': {'branch': None, 'commit': None, 'date': None, 'query_return_code': 128, 'query_err': 'fatal: Not a git repository (or any parent up to mount point /rcfs)\nStopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).\n', 'query_path': '/rcfs/dtn/arpacomp/.conda/envs/goc_eval/lib/python3.10/site-packages/datamodel', 'query_out': ''}}
+
+after reading problem without validation, memory info: {'rss bytes': 178876416, 'rss human': '170.6M', 'percent': 0.06619413192377872}
+read problem data file without validation time: 0.34861183166503906
+after reading problem with validation, memory info: {'rss bytes': 311377920, 'rss human': '297.0M', 'percent': 0.11522699065388149}
+load time: 2.8744442462921143
+{'general': {'base_norm_mva': 100.0,
+             'day_type': None,
+             'electricity_demand': None,
+             'net_load': None,
+             'season': None,
+             'solar_availability': None,
+             'timestamp_start': None,
+             'timestamp_stop': None,
+             'vre_availability': None,
+             'weather_temperature': None,
+             'wind_availability': None},
+ 'interval durations': [0.25,
+                        0.25,
+                        0.25,
+                        0.25,
+                        0.25,
+                        0.25,
+                        0.25,
+                        0.25,
+                        0.5,
+                        0.5,
+                        0.5,
+                        0.5,
+                        0.5,
+                        0.5,
+                        0.5,
+                        0.5,
+                        1.0,
+                        1.0],
+ 'num ac lines': 2227,
+ 'num buses': 1576,
+ 'num consuming devices': 1449,
+ 'num contingencies': 219,
+ 'num dc lines': 0,
+ 'num intervals': 18,
+ 'num producing devices': 615,
+ 'num reactive power reserve zones': 2,
+ 'num real power reserve zones': 2,
+ 'num shunts': 68,
+ 'num simple dispatchable devices': 2064,
+ 'num transformers': 144,
+ 'total duration': 8.0,
+ 'violation costs': {'e_vio_cost': 100000.0,
+                     'p_bus_vio_cost': 100000.0,
+                     'q_bus_vio_cost': 100000.0,
+                     's_vio_cost': 100000.0}}
+after read solution without validation, memory info: {'rss bytes': 319758336, 'rss human': '304.9M', 'percent': 0.1183282064244398}
+read solution data file without validation time: 0.1287240982055664
+after read solution with validation, memory info: {'rss bytes': 352739328, 'rss human': '336.4M', 'percent': 0.13053299106986274}
+solution load time: 1.0892741680145264
+after solution_model_checks(), memory info: {'rss bytes': 352739328, 'rss human': '336.4M', 'percent': 0.13053299106986274}
+solution model_checks time: 0.014526844024658203
+{}
+after problem_data_array.set_from_data_model(), memory info: {'rss bytes': 364658688, 'rss human': '347.8M', 'percent': 0.13494381115408788}
+convert problem data to numpy arrays time: 0.47147417068481445
+after solution_data_array.set_from_data_model(), memory info: {'rss bytes': 369246208, 'rss human': '352.1M', 'percent': 0.13664144637550787}
+convert solution data to numpy arrays time: 0.043083906173706055
+function: set_summary, time: 0.0001766681671142578
+function: set_problem, time: 7.152557373046875e-07
+function: set_solution, time: 4.291534423828125e-06
+function: set_solution_zero, time: 0.00039196014404296875
+function: set_work_zero, time: 0.00042366981506347656
+function: set_matrices, time: 0.005212545394897461
+function: __init__, time: 0.0062334537506103516
+function: eval_sd_t_d_up_dn, time: 0.000835418701171875
+function: eval_sd_max_startup, time: 0.04822063446044922
+function: eval_sd_t_z_sus, time: 0.03409695625305176
+function: eval_acl_t_p_q_fr_to, time: 0.0025396347045898438
+function: eval_xfr_t_p_q_fr_to, time: 0.00028204917907714844
+function: eval_sd_t_su_sd_trajectories, time: 0.00041604042053222656
+function: eval_sd_max_energy, time: 0.0012712478637695312
+function: eval_sd_min_energy, time: 0.0007653236389160156
+function: eval_sd_t_z_p, time: 0.10269927978515625
+function: eval_bus_t_p, time: 0.0009796619415283203
+function: eval_bus_t_q, time: 0.0004782676696777344
+sd_t_p_rgu sum: 0.0
+prz_sigma_rgu max: 0.01
+prz_t_p_rgu_req max: 3.076527115409782
+sd_t_p_rgd sum: 0.0
+prz_sigma_rgd max: 0.01
+prz_t_p_rgd_req max: 3.076527115409782
+sd_t_p_scr sum: 0.0
+prz_sigma_scr max: 1.0
+prz_t_p_scr_req max: 12.51320269991617
+sd_t_p_nsc sum: 0.0
+prz_sigma_nsc max: 1.0
+prz_t_p_nsc_req max: 12.51320269991617
+sd_t_p_rru sum: 0.0
+prz_t_p_rru_min max: 0.0
+sd_t_p_rrd sum: 0.0
+prz_t_p_rrd_min max: 0.0
+sd_t_p_qru sum: 0.0
+qrz_t_q_qru_min max: 0.0
+sd_t_p_qrd sum: 0.0
+qrz_t_q_qrd_min max: 0.0
+function: get_connected_components, time: 0.008349180221557617
+function: get_bridges, time: 0.02735590934753418
+function: get_connected_components, time: 0.00663447380065918
+function: get_bridges, time: 0.027005434036254883
+function: get_connected_components, time: 0.00669097900390625
+function: get_bridges, time: 0.027142763137817383
+function: get_connected_components, time: 0.0068285465240478516
+function: get_bridges, time: 0.027167558670043945
+function: get_connected_components, time: 0.006714344024658203
+function: get_bridges, time: 0.02708745002746582
+function: get_connected_components, time: 0.0068378448486328125
+function: get_bridges, time: 0.027313947677612305
+function: get_connected_components, time: 0.007040977478027344
+function: get_bridges, time: 0.027228832244873047
+function: get_connected_components, time: 0.00694584846496582
+function: get_bridges, time: 0.02777099609375
+function: get_connected_components, time: 0.007117509841918945
+function: get_bridges, time: 0.027723312377929688
+function: get_connected_components, time: 0.006882429122924805
+function: get_bridges, time: 0.027607202529907227
+function: get_connected_components, time: 0.0068933963775634766
+function: get_bridges, time: 0.027233123779296875
+function: get_connected_components, time: 0.006905317306518555
+function: get_bridges, time: 0.027251720428466797
+function: get_connected_components, time: 0.006921291351318359
+function: get_bridges, time: 0.027499914169311523
+function: get_connected_components, time: 0.00674748420715332
+function: get_bridges, time: 0.02749347686767578
+function: get_connected_components, time: 0.006852388381958008
+function: get_bridges, time: 0.02755284309387207
+function: get_connected_components, time: 0.006860256195068359
+function: get_bridges, time: 0.02741551399230957
+function: get_connected_components, time: 0.0067937374114990234
+function: get_bridges, time: 0.027457237243652344
+function: get_connected_components, time: 0.006761789321899414
+function: get_bridges, time: 0.0273287296295166
+end of eval_connectedness(), memory info: {'rss bytes': 410152960, 'rss human': '391.2M', 'percent': 0.15177919901508055}
+function: eval_connectedness, time: 0.6472804546356201
+problem dimensions. bus: 1576, acl: 2227, xfr: 144, dcl: 0, k: 219, t: 18
+construct static bus admittance matrix. time: 0.0012369155883789062
+factor static bus admittance matrix. time: 0.0074312686920166016
+t_acl_delta_t: [array([], dtype=int64), array([], dtype=int64), array([], dtype=int64), array([], dtype=int64), array([], dtype=int64), array([], dtype=int64), array([], dtype=int64), array([], dtype=int64), array([], dtype=int64), array([], dtype=int64), array([], dtype=int64), array([], dtype=int64), array([], dtype=int64), array([], dtype=int64), array([], dtype=int64), array([], dtype=int64), array([], dtype=int64), array([], dtype=int64)], t_xfr_delta_t: [array([], dtype=int64), array([], dtype=int64), array([], dtype=int64), array([], dtype=int64), array([], dtype=int64), array([], dtype=int64), array([], dtype=int64), array([], dtype=int64), array([], dtype=int64), array([], dtype=int64), array([], dtype=int64), array([], dtype=int64), array([], dtype=int64), array([], dtype=int64), array([], dtype=int64), array([], dtype=int64), array([], dtype=int64), array([], dtype=int64)], t_br_delta_t: [array([], dtype=int64), array([], dtype=int64), array([], dtype=int64), array([], dtype=int64), array([], dtype=int64), array([], dtype=int64), array([], dtype=int64), array([], dtype=int64), array([], dtype=int64), array([], dtype=int64), array([], dtype=int64), array([], dtype=int64), array([], dtype=int64), array([], dtype=int64), array([], dtype=int64), array([], dtype=int64), array([], dtype=int64), array([], dtype=int64)], acl_delta_t: [], xfr_delta_t: [], br_delta_t: []
+contingency delta branches. acl: 219, xfr: 0, dcl: 0
+construct bus,t-indexed right hand side. time: 0.0003256797790527344
+solve for base case bus,t-indexed theta. time: 0.12957406044006348
+num AC branches with possible violations in ACL contingencies: 0
+num AC branches with possible violations in DCL contingencies: 0
+num AC branches with possible violations in XFR contingencies: 0
+t: 0, time: 0.17940735816955566, memory_info: {'rss bytes': 446709760, 'rss human': '426.0M', 'percent': 0.16530722968577105}
+num AC branches with possible violations in ACL contingencies: 0
+num AC branches with possible violations in DCL contingencies: 0
+num AC branches with possible violations in XFR contingencies: 0
+t: 1, time: 0.19168496131896973, memory_info: {'rss bytes': 451715072, 'rss human': '430.8M', 'percent': 0.16715947097199893}
+num AC branches with possible violations in ACL contingencies: 0
+num AC branches with possible violations in DCL contingencies: 0
+num AC branches with possible violations in XFR contingencies: 0
+t: 2, time: 0.16356182098388672, memory_info: {'rss bytes': 451715072, 'rss human': '430.8M', 'percent': 0.16715947097199893}
+num AC branches with possible violations in ACL contingencies: 0
+num AC branches with possible violations in DCL contingencies: 0
+num AC branches with possible violations in XFR contingencies: 0
+t: 3, time: 0.15692949295043945, memory_info: {'rss bytes': 451715072, 'rss human': '430.8M', 'percent': 0.16715947097199893}
+num AC branches with possible violations in ACL contingencies: 0
+num AC branches with possible violations in DCL contingencies: 0
+num AC branches with possible violations in XFR contingencies: 0
+t: 4, time: 0.15636420249938965, memory_info: {'rss bytes': 451715072, 'rss human': '430.8M', 'percent': 0.16715947097199893}
+num AC branches with possible violations in ACL contingencies: 0
+num AC branches with possible violations in DCL contingencies: 0
+num AC branches with possible violations in XFR contingencies: 0
+t: 5, time: 0.15792250633239746, memory_info: {'rss bytes': 451715072, 'rss human': '430.8M', 'percent': 0.16715947097199893}
+num AC branches with possible violations in ACL contingencies: 0
+num AC branches with possible violations in DCL contingencies: 0
+num AC branches with possible violations in XFR contingencies: 0
+t: 6, time: 0.1575009822845459, memory_info: {'rss bytes': 451715072, 'rss human': '430.8M', 'percent': 0.16715947097199893}
+num AC branches with possible violations in ACL contingencies: 0
+num AC branches with possible violations in DCL contingencies: 0
+num AC branches with possible violations in XFR contingencies: 0
+t: 7, time: 0.13906598091125488, memory_info: {'rss bytes': 451715072, 'rss human': '430.8M', 'percent': 0.16715947097199893}
+num AC branches with possible violations in ACL contingencies: 0
+num AC branches with possible violations in DCL contingencies: 0
+num AC branches with possible violations in XFR contingencies: 0
+t: 8, time: 0.15444445610046387, memory_info: {'rss bytes': 451715072, 'rss human': '430.8M', 'percent': 0.16715947097199893}
+num AC branches with possible violations in ACL contingencies: 0
+num AC branches with possible violations in DCL contingencies: 0
+num AC branches with possible violations in XFR contingencies: 0
+t: 9, time: 0.15039300918579102, memory_info: {'rss bytes': 451715072, 'rss human': '430.8M', 'percent': 0.16715947097199893}
+num AC branches with possible violations in ACL contingencies: 0
+num AC branches with possible violations in DCL contingencies: 0
+num AC branches with possible violations in XFR contingencies: 0
+t: 10, time: 0.14696693420410156, memory_info: {'rss bytes': 451715072, 'rss human': '430.8M', 'percent': 0.16715947097199893}
+num AC branches with possible violations in ACL contingencies: 0
+num AC branches with possible violations in DCL contingencies: 0
+num AC branches with possible violations in XFR contingencies: 0
+t: 11, time: 0.14281392097473145, memory_info: {'rss bytes': 451715072, 'rss human': '430.8M', 'percent': 0.16715947097199893}
+num AC branches with possible violations in ACL contingencies: 0
+num AC branches with possible violations in DCL contingencies: 0
+num AC branches with possible violations in XFR contingencies: 0
+t: 12, time: 0.14606094360351562, memory_info: {'rss bytes': 452202496, 'rss human': '431.3M', 'percent': 0.1673398447142748}
+num AC branches with possible violations in ACL contingencies: 0
+num AC branches with possible violations in DCL contingencies: 0
+num AC branches with possible violations in XFR contingencies: 0
+t: 13, time: 0.14440083503723145, memory_info: {'rss bytes': 452202496, 'rss human': '431.3M', 'percent': 0.1673398447142748}
+num AC branches with possible violations in ACL contingencies: 0
+num AC branches with possible violations in DCL contingencies: 0
+num AC branches with possible violations in XFR contingencies: 0
+t: 14, time: 0.1079721450805664, memory_info: {'rss bytes': 452472832, 'rss human': '431.5M', 'percent': 0.16743988393267992}
+num AC branches with possible violations in ACL contingencies: 0
+num AC branches with possible violations in DCL contingencies: 0
+num AC branches with possible violations in XFR contingencies: 0
+t: 15, time: 0.09897232055664062, memory_info: {'rss bytes': 452472832, 'rss human': '431.5M', 'percent': 0.16743988393267992}
+num AC branches with possible violations in ACL contingencies: 0
+num AC branches with possible violations in DCL contingencies: 0
+num AC branches with possible violations in XFR contingencies: 0
+t: 16, time: 0.09837031364440918, memory_info: {'rss bytes': 452472832, 'rss human': '431.5M', 'percent': 0.16743988393267992}
+num AC branches with possible violations in ACL contingencies: 0
+num AC branches with possible violations in DCL contingencies: 0
+num AC branches with possible violations in XFR contingencies: 0
+t: 17, time: 0.10144734382629395, memory_info: {'rss bytes': 452472832, 'rss human': '431.5M', 'percent': 0.16743988393267992}
+initialize_m_w_time: 0.0008666515350341797
+compute_static_w_time: 0.13728737831115723
+get_time_varying_branch_characteristics_time: 0.001745462417602539
+construct_a_t_time: 0.009547948837280273
+factor_a_t_time: 0.0553891658782959
+compute_w_with_t_a_solve_time: 1.5206398963928223
+compute_v_t_time: 3.814697265625e-06
+compute_w_with_t_smw_time: 1.9073486328125e-06
+compute_v_time: 0.004700422286987305
+compute_bus_theta_with_t_a_solve_time: 0.002575397491455078
+compute_bus_theta_with_t_smw_time: 1.430511474609375e-06
+compute_br_p_time: 0.0032889842987060547
+apply_w_v_wt_time: 0.008249759674072266
+compute_bus_dtheta_rhs_dcl_k_time: 0.0031151771545410156
+compute_w_v_wt_xfr_k_time: 0.002581357955932617
+compute_bus_dtheta_rhs_xfr_k_time: 2.1457672119140625e-06
+compute_br_acl_delta_k_p_delta_time: 0.040848731994628906
+compute_br_dcl_delta_k_p_delta_time: 0.001600503921508789
+compute_br_xfr_delta_k_p_delta_time: 0.0011630058288574219
+filter_branches_acl_k_time: 0.0224301815032959
+filter_branches_dcl_k_time: 0.0031065940856933594
+filter_branches_xfr_k_time: 0.0030410289764404297
+compute_br_acl_delta_k_p_time: 0.005285739898681641
+compute_br_dcl_delta_k_p_time: 8.153915405273438e-05
+compute_br_xfr_delta_k_p_time: 5.364418029785156e-05
+compute_br_acl_delta_k_s_over_time: 0.893991231918335
+compute_br_dcl_delta_k_s_over_time: 0.0006368160247802734
+compute_br_xfr_delta_k_s_over_time: 0.0005679130554199219
+zero_out_time: 0.00010514259338378906
+get_max_br_acl_delta_k_s_over_time: 0.002750873565673828
+get_max_br_dcl_delta_k_s_over_time: 2.86102294921875e-06
+get_max_br_xfr_delta_k_s_over_time: 2.1457672119140625e-06
+compute_br_k_z_time: 0.0025801658630371094
+collect_penalties_into_obj_array_time: 0.0002906322479248047
+end of contingency model method 1, memory info: {'rss bytes': 452472832, 'rss human': '431.5M', 'percent': 0.16743988393267992}
+function: eval_post_contingency_model, time: 2.88210129737854
+function: eval_post_contingency_model, time: 2.8821167945861816
+function: run, time: 3.740163564682007
+after solution_evaluator.run(), memory info: {'rss bytes': 425795584, 'rss human': '406.1M', 'percent': 0.157567831970976}
+evaluation summary:
+{'feas': 1,
+ 'infeas': 0,
+ 'info_i_i_k_t_disconnected_ctg': {'idx': {0: None, 1: None, 2: None, 3: None},
+                                   'val': 0},
+ 'info_i_i_t_disconnected_base': {'idx': {0: None, 1: None, 2: None}, 'val': 0},
+ 'sum_acl_t_u_sd': 0,
+ 'sum_acl_t_u_su': 0,
+ 'sum_acl_t_z_s': 0.0,
+ 'sum_acl_t_z_sd': 0.0,
+ 'sum_acl_t_z_su': 0.0,
+ 'sum_bus_t_z_p': 20050710.747837957,
+ 'sum_bus_t_z_q': 140608086.77122828,
+ 'sum_cs_t_z_p': 127296837.90481365,
+ 'sum_pr_t_z_p': 61126.44642772599,
+ 'sum_prz_t_z_nsc': 224331.12687697678,
+ 'sum_prz_t_z_rgd': 21411.927636760145,
+ 'sum_prz_t_z_rgu': 21411.927636760145,
+ 'sum_prz_t_z_rrd': 0.0,
+ 'sum_prz_t_z_rru': 0.0,
+ 'sum_prz_t_z_scr': 114912.27962977879,
+ 'sum_qrz_t_z_qrd': 0.0,
+ 'sum_qrz_t_z_qru': 0.0,
+ 'sum_sd_t_sd': 0,
+ 'sum_sd_t_su': 0,
+ 'sum_sd_t_z_nsc': 0.0,
+ 'sum_sd_t_z_on': 1571578.8433080001,
+ 'sum_sd_t_z_qrd': 0.0,
+ 'sum_sd_t_z_qru': 0.0,
+ 'sum_sd_t_z_rgd': 0.0,
+ 'sum_sd_t_z_rgu': 0.0,
+ 'sum_sd_t_z_rrd_off': 0.0,
+ 'sum_sd_t_z_rrd_on': 0.0,
+ 'sum_sd_t_z_rru_off': 0.0,
+ 'sum_sd_t_z_rru_on': 0.0,
+ 'sum_sd_t_z_scr': 0.0,
+ 'sum_sd_t_z_sd': 0.0,
+ 'sum_sd_t_z_su': 0.0,
+ 'sum_sd_t_z_sus': 0.0,
+ 'sum_xfr_t_u_sd': 0,
+ 'sum_xfr_t_u_su': 0,
+ 'sum_xfr_t_z_s': 0.0,
+ 'sum_xfr_t_z_sd': 0.0,
+ 'sum_xfr_t_z_su': 0.0,
+ 'viol_acl_acl_t_s_max_ctg': {'idx': {0: None, 1: None, 2: None}, 'val': 0.0},
+ 'viol_acl_dcl_t_s_max_ctg': {'idx': {0: None, 1: None, 2: None}, 'val': 0.0},
+ 'viol_acl_t_s_max': {'idx': {0: 'acl_0000', 1: 0}, 'val': 0.0},
+ 'viol_acl_t_u_sd_max': {'idx': {0: 'acl_0000', 1: 0}, 'val': 0},
+ 'viol_acl_t_u_su_max': {'idx': {0: 'acl_0000', 1: 0}, 'val': 0},
+ 'viol_acl_xfr_t_s_max_ctg': {'idx': {0: None, 1: None, 2: None}, 'val': 0.0},
+ 'viol_bus_t_p_balance_max': {'idx': {0: 'bus_0394', 1: 12},
+                              'val': 2.620506740000108},
+ 'viol_bus_t_p_balance_min': {'idx': {0: 'bus_1492', 1: 17},
+                              'val': -0.9039041726499608},
+ 'viol_bus_t_q_balance_max': {'idx': {0: 'bus_1492', 1: 0},
+                              'val': 4.957770927655733},
+ 'viol_bus_t_q_balance_min': {'idx': {0: 'bus_0394', 1: 0},
+                              'val': -3.895473664775446},
+ 'viol_bus_t_v_max': {'idx': {0: 'bus_0000', 1: 0}, 'val': 0.0},
+ 'viol_bus_t_v_min': {'idx': {0: 'bus_0000', 1: 0}, 'val': 0.0},
+ 'viol_cs_t_p_off_max': {'idx': {0: 'sd_0615', 1: 0}, 'val': 0.0},
+ 'viol_cs_t_p_off_min': {'idx': {0: 'sd_0615', 1: 0}, 'val': 0.0},
+ 'viol_cs_t_p_on_max': {'idx': {0: 'sd_0615', 1: 0}, 'val': 0.0},
+ 'viol_cs_t_p_on_min': {'idx': {0: 'sd_0615', 1: 0}, 'val': 0.0},
+ 'viol_cs_t_q_max': {'idx': {0: 'sd_0615', 1: 0}, 'val': 0.0},
+ 'viol_cs_t_q_min': {'idx': {0: 'sd_0615', 1: 0}, 'val': 0.0},
+ 'viol_cs_t_q_p_max': {'idx': {0: None, 1: None}, 'val': None},
+ 'viol_cs_t_q_p_min': {'idx': {0: None, 1: None}, 'val': None},
+ 'viol_dcl_t_p_max': {'idx': {0: None, 1: None}, 'val': None},
+ 'viol_dcl_t_p_min': {'idx': {0: None, 1: None}, 'val': None},
+ 'viol_dcl_t_q_fr_max': {'idx': {0: None, 1: None}, 'val': None},
+ 'viol_dcl_t_q_fr_min': {'idx': {0: None, 1: None}, 'val': None},
+ 'viol_dcl_t_q_to_max': {'idx': {0: None, 1: None}, 'val': None},
+ 'viol_dcl_t_q_to_min': {'idx': {0: None, 1: None}, 'val': None},
+ 'viol_pr_t_p_off_max': {'idx': {0: 'sd_0000', 1: 0}, 'val': 0.0},
+ 'viol_pr_t_p_off_min': {'idx': {0: 'sd_0000', 1: 0}, 'val': 0.0},
+ 'viol_pr_t_p_on_max': {'idx': {0: 'sd_0000', 1: 0}, 'val': 0.0},
+ 'viol_pr_t_p_on_min': {'idx': {0: 'sd_0000', 1: 0}, 'val': 0.0},
+ 'viol_pr_t_q_max': {'idx': {0: 'sd_0000', 1: 0}, 'val': 0.0},
+ 'viol_pr_t_q_min': {'idx': {0: 'sd_0000', 1: 0}, 'val': 0.0},
+ 'viol_pr_t_q_p_max': {'idx': {0: None, 1: None}, 'val': None},
+ 'viol_pr_t_q_p_min': {'idx': {0: None, 1: None}, 'val': None},
+ 'viol_prz_t_p_nsc_balance': {'idx': {0: 'prz_0', 1: 9},
+                              'val': 28.10293251507446},
+ 'viol_prz_t_p_rgd_balance': {'idx': {0: 'prz_0', 1: 9},
+                              'val': 3.076527115409782},
+ 'viol_prz_t_p_rgu_balance': {'idx': {0: 'prz_0', 1: 9},
+                              'val': 3.076527115409782},
+ 'viol_prz_t_p_rrd_balance': {'idx': {0: 'prz_0', 1: 0}, 'val': 0.0},
+ 'viol_prz_t_p_rru_balance': {'idx': {0: 'prz_0', 1: 0}, 'val': 0.0},
+ 'viol_prz_t_p_scr_balance': {'idx': {0: 'prz_0', 1: 9},
+                              'val': 15.589729815242121},
+ 'viol_qrz_t_q_qrd_balance': {'idx': {0: 'qrz_0', 1: 0}, 'val': 0.0},
+ 'viol_qrz_t_q_qru_balance': {'idx': {0: 'qrz_0', 1: 0}, 'val': 0.0},
+ 'viol_sd_max_energy_constr': {'idx': {0: 'sd_0000', 1: 0}, 'val': 0.0},
+ 'viol_sd_max_startup_constr': {'idx': {0: 'sd_0000', 1: 0}, 'val': 0},
+ 'viol_sd_min_energy_constr': {'idx': {0: 'sd_0000', 1: 0}, 'val': 0.0},
+ 'viol_sd_t_d_dn_min': {'idx': {0: 'sd_0000', 1: 0}, 'val': 0},
+ 'viol_sd_t_d_up_min': {'idx': {0: 'sd_0000', 1: 0}, 'val': 0},
+ 'viol_sd_t_p_nsc_max': {'idx': {0: 'sd_0000', 1: 0}, 'val': 0.0},
+ 'viol_sd_t_p_nsc_nonneg': {'idx': {0: 'sd_0000', 1: 0}, 'val': -0.0},
+ 'viol_sd_t_p_ramp_dn_max': {'idx': {0: 'sd_0000', 1: 0}, 'val': 0.0},
+ 'viol_sd_t_p_ramp_up_max': {'idx': {0: 'sd_0000', 1: 0}, 'val': 0.0},
+ 'viol_sd_t_p_rgd_max': {'idx': {0: 'sd_0000', 1: 0}, 'val': 0.0},
+ 'viol_sd_t_p_rgd_nonneg': {'idx': {0: 'sd_0000', 1: 0}, 'val': -0.0},
+ 'viol_sd_t_p_rgu_max': {'idx': {0: 'sd_0000', 1: 0}, 'val': 0.0},
+ 'viol_sd_t_p_rgu_nonneg': {'idx': {0: 'sd_0000', 1: 0}, 'val': -0.0},
+ 'viol_sd_t_p_rrd_off_max': {'idx': {0: 'sd_0000', 1: 0}, 'val': 0.0},
+ 'viol_sd_t_p_rrd_off_nonneg': {'idx': {0: 'sd_0000', 1: 0}, 'val': -0.0},
+ 'viol_sd_t_p_rrd_on_max': {'idx': {0: 'sd_0000', 1: 0}, 'val': 0.0},
+ 'viol_sd_t_p_rrd_on_nonneg': {'idx': {0: 'sd_0000', 1: 0}, 'val': -0.0},
+ 'viol_sd_t_p_rru_off_max': {'idx': {0: 'sd_0000', 1: 0}, 'val': 0.0},
+ 'viol_sd_t_p_rru_off_nonneg': {'idx': {0: 'sd_0000', 1: 0}, 'val': -0.0},
+ 'viol_sd_t_p_rru_on_max': {'idx': {0: 'sd_0000', 1: 0}, 'val': 0.0},
+ 'viol_sd_t_p_rru_on_nonneg': {'idx': {0: 'sd_0000', 1: 0}, 'val': -0.0},
+ 'viol_sd_t_p_scr_max': {'idx': {0: 'sd_0000', 1: 0}, 'val': 0.0},
+ 'viol_sd_t_p_scr_nonneg': {'idx': {0: 'sd_0000', 1: 0}, 'val': -0.0},
+ 'viol_sd_t_q_qrd_nonneg': {'idx': {0: 'sd_0000', 1: 0}, 'val': -0.0},
+ 'viol_sd_t_q_qru_nonneg': {'idx': {0: 'sd_0000', 1: 0}, 'val': -0.0},
+ 'viol_sd_t_u_on_max': {'idx': {0: 'sd_0000', 1: 0}, 'val': 0},
+ 'viol_sd_t_u_on_min': {'idx': {0: 'sd_0000', 1: 0}, 'val': 0},
+ 'viol_sh_t_u_st_max': {'idx': {0: 'sh_00', 1: 0}, 'val': 0},
+ 'viol_sh_t_u_st_min': {'idx': {0: 'sh_00', 1: 0}, 'val': 0},
+ 'viol_t_connected_base': {'idx': {0: 0}, 'val': 0},
+ 'viol_t_connected_ctg': {'idx': {0: 0}, 'val': 0},
+ 'viol_xfr_acl_t_s_max_ctg': {'idx': {0: None, 1: None, 2: None}, 'val': 0.0},
+ 'viol_xfr_dcl_t_s_max_ctg': {'idx': {0: None, 1: None, 2: None}, 'val': 0.0},
+ 'viol_xfr_t_phi_max': {'idx': {0: 'xfr_000', 1: 0}, 'val': 0.0},
+ 'viol_xfr_t_phi_min': {'idx': {0: 'xfr_000', 1: 0}, 'val': 0.0},
+ 'viol_xfr_t_s_max': {'idx': {0: 'xfr_000', 1: 0}, 'val': 0.0},
+ 'viol_xfr_t_tau_max': {'idx': {0: 'xfr_000', 1: 0}, 'val': 0.0},
+ 'viol_xfr_t_tau_min': {'idx': {0: 'xfr_000', 1: 0}, 'val': 0.0},
+ 'viol_xfr_t_u_sd_max': {'idx': {0: 'xfr_000', 1: 0}, 'val': 0},
+ 'viol_xfr_t_u_su_max': {'idx': {0: 'xfr_000', 1: 0}, 'val': 0},
+ 'viol_xfr_xfr_t_s_max_ctg': {'idx': {0: None, 1: None, 2: None}, 'val': 0.0},
+ 'z': -35376732.16576843,
+ 'z_base': -35376732.16576843,
+ 'z_cost': 1632705.289735726,
+ 'z_k_average_case': 0.0,
+ 'z_k_worst_case': 0.0,
+ 'z_max_energy': 0.0,
+ 'z_min_energy': 0.0,
+ 'z_penalty': 161040864.7808465,
+ 'z_value': 127296837.90481365}
+infeasibility summary:
+{}
+feas: 1
+obj: -35376732.16576843
+evaluate solution time: 3.749823808670044
+end of check_data(), memory info: {'rss bytes': 426041344, 'rss human': '406.3M', 'percent': 0.15765877671498066}

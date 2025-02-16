@@ -1,0 +1,15 @@
+Traceback (most recent call last):
+  File "/qfs/projects/goc/share/loadbalancing/src/nonmpi-template/Challenge3/C3DataUtilities/datautilities/validation.py", line 690, in check_data
+    data_model = InputDataFile.load(problem_file)
+  File "/rcfs/dtn/arpacomp/.conda/envs/goc_eval/lib/python3.10/site-packages/datamodel/base.py", line 41, in load
+    cfg = cls(**load_data(filename.name))
+  File "pydantic/main.py", line 342, in pydantic.main.BaseModel.__init__
+pydantic.error_wrappers.ValidationError: 4 validation errors for InputDataFile
+network
+  field required (type=value_error.missing)
+time_series_input
+  field required (type=value_error.missing)
+reliability
+  field required (type=value_error.missing)
+time_series_output
+  extra fields not permitted (type=value_error.extra)
